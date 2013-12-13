@@ -12,6 +12,18 @@ angular.module('odiometroApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/dos', {
+          templateUrl: 'views/dos.html',
+          controller: 'DoscontrollerCtrl'
+      })
+      .when('/about', {
+          templateUrl: 'views/about.html',
+          controller: 'DoscontrollerCtrl'
+      })
+      .when('/contact', {
+          templateUrl: 'views/contact.html',
+          controller: 'DoscontrollerCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
